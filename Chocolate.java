@@ -1,17 +1,17 @@
 public class Chocolate extends  BeverageDecorator{
     public static  final int ChocolateAddOnPrice=30;
-    Beverage beverage;
+//    Beverage beverage;
     public Chocolate(Beverage beverage){
-        this.beverage=beverage;
+        super(beverage);
     }
 
     @Override
     public String getDescription(){
-        return this.beverage.getDescription()+" "+"Extra chocolate";
+        return beverage.getDescription()+" "+"Extra chocolate";
     }
     @Override
     public double getCost(){
-        return this.beverage.getCost()+ChocolateAddOnPrice;
+        return beverage.getCost()+ChocolateAddOnPrice;
     }
 
 }
