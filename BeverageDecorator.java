@@ -1,4 +1,3 @@
-abstract  public class BeverageDecorator extends Beverage {
-    
+abstract public class BeverageDecorator extends Beverage {
 
 }
